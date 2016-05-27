@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- This is the Gallery -->
+
+    <!-- This LinearLayout if for the dots -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true">
+
+        <Gallery xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout android:id="@+id/image_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00000000"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" >
+
+    <RelativeLayout android:id="@+id/gallery_paging"
+        android:layout_width="fill_parent"
+        android:layout_height="800dp">
+
+        <com.common.vmi.ExtendedGallery android:id="@+id/mygallery01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:spacing="0px"
+            android:fadingEdge="none"/>
+
+        <LinearLayout android:id="@+id/image_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#00000000"
+            android:layout_alignParentBottom="true" >
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+-->
+
+    <!--http://www.tjkannan.blogspot.in/2013/10/gallery-with-paging-dots-only.html-->
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/gallery_paging"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+
+        <com.common.vmi.ExtendedGallery
+            android:id="@+id/mygallery01"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:fadingEdge="none"
+            android:spacing="0px" />
+
+        &lt;!&ndash;<LinearLayout
+            android:id="@+id/image_count"
+            androidbackground="#00000000"
+            androidrientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"></LinearLayout>&ndash;&gt;
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/iconic_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="185dip"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/gallery_paging"
+        android:layout_marginBottom="30dip"
+        android:layout_weight="1.0"
+        android:columnWidth="10dp"
+        android:horizontalSpacing="30dp"
+
+        android:numColumns="3"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:tag="temp"
+        android:verticalSpacing="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/power_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dash_text"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/power_text"
+            android:layout_width="125dp"
+            android:layout_height="30dip"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/power_ever_text"
+            android:layout_width="125dp"
+            android:layout_height="30dip"
+            android:layout_toRightOf="@+id/power_text"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:id="@+id/info_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_dialog_info"></ImageButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>-->
